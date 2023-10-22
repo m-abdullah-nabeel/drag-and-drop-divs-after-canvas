@@ -2,7 +2,8 @@ import { Container, Box, Button, TextField } from "@mui/material"
 import { useState, useRef, useEffect } from "react"
 import DrawCx from "./sd"
 import useDragger from "./useDragger"
-
+import TestRect from "./rect_t"
+import TestRectS from "./rect_s"
 
 const Dragdiv = () => {
 
@@ -12,6 +13,8 @@ const Dragdiv = () => {
         <main>
             <div className="container" style={{height: '80vh', width: '90vw', margin: 'auto', backgroundColor: 'gray', position: 'relative', overflow: 'hidden'}}>
                 <div id="pinkBox" className="box" style={{height: '50px', width: '50px', border: '1px solid black', position: 'absolute', cursor: 'pointer'}}></div>
+                <TestRect/>
+                <TestRectS/>
             </div>
         </main>
     )
